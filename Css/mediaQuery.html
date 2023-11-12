@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: bisque;
+      }
+      .box {
+        background-color: azure;
+        width: 200px;
+        min-height: 200px;
+      }
+      @media screen and (orientation: portrait) {
+        body {
+          color: purple;
+        }
+      }
+      @media screen and (max-width: 255px) {
+        body {
+          background-color: aquamarine;
+        }
+        .box {
+          display: flex;
+          flex-direction: column-reverse;
+          background-color: blanchedalmond;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h1>Hello</h1>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis,
+        cum? Minima, eos temporibus. Enim perspiciatis laudantium quod
+        repudiandae. Fuga maxime expedita placeat!
+      </p>
+    </div>
+  </body>
+</html>
