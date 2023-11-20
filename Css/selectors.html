@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* .box:first-child {
+        background-color: red;
+      } */
+      /* .box::first-line {
+        background-color: yellow;
+      } */
+      /* .boxes * {
+        border: 2px solid black;
+      } */
+      /* .box::first-line,
+      [data-color="primary"] {
+        background-color: aqua;
+        margin: 20px;
+      } */
+      /* .box::before {
+        content: " ";
+        width: auto;
+        background-color: black;
+        height: 5px;
+        display: block;
+      } */
+      /* .box::after {
+        content: " ";
+        color: blue;
+        width: auto;
+        display: block;
+        height: 5px;
+        background-color: aquamarine;
+      } */
+      ::selection {
+        color: aqua;
+        background-color: black;
+      }
+      .box:first-letter {
+        color: blue;
+        font-size: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="boxes">
+      <div class="box">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos ipsum
+        quam sunt suscipit fugiat eligendi explicabo numquam repudiandae
+        distinctio. Sapiente non similique delectus autem asperiores. Iusto
+        soluta dolores inventore sint.
+      </div>
+      <!-- <div class="box" data-color="primary">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos similique
+        voluptatem, magni dolores facilis laudantium tenetur quidem eaque quos
+        quia? Libero nihil aspernatur assumenda, possimus sint nobis? Molestias,
+        vel accusantium.
+      </div>
+      <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates in
+        optio est non aperiam ea hic, unde ut praesentium illo assumenda
+        laboriosam modi quod fuga dolor. Accusamus eligendi labore doloribus.
+      </div> -->
+    </div>
+  </body>
+</html>
