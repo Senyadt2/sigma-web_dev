@@ -4,6 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TRANSITION</title>
+    <style>
+      .container {
+        width: 100vw;
+        height: 100vh;
+        background-color: bisque;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: aquamarine;
+        transition-property: transform;
+        transition-property: transform, background-all, scale;
+        transition-property: all;
+        transition-timing-function: ease-in-out;
+        transition-duration: 3s;
+        transition-delay: 1s;
+        transition: all 1s ease-in-out 2s;
+      }
+      .box:hover {
+        transition: all 1s ease-in-out 2s;
+      }
+      .translate {
+        transform: translateX(10vw) translateY(10vh);
+        background-color: rgb(30, 238, 245);
+        /* scale: 1.2; */
+      }
+      .box1 {
+        width: 50px;
+        height: 50px;
+        background-color: rgb(253, 255, 127);
+      }
+      .box1:hover {
+        scale: 1.4;
+        transition: all 1s ease-in-out 0.5s;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div class="box translate"><div class="box1"></div></div>
+    </div>
+  </body>
 </html>
