@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      img {
+        /* blur */
+        /* filter: blur(10px); */
+        /* brightness  */
+        /* contrast  */
+        /* filter: brightness(120%) contrast(200%); */
+        /* gray scale black and white  */
+        /* filter: grayscale(100%); */
+        /* sepia purano imgs haru jasto */
+        /* filter: sepia(200%); */
+        /* filter: drop-shadow(16px 16px hsl(0, 100%, 20%)); */
+        filter: invert(0.2);
+        /* o to 1 */
+        filter: opacity(0.8) brightness(90%)
+          drop-shadow(6px 6px hsl(0, 100%, 20%));
+      }
+    </style>
+  </head>
+  <body>
+    <div style="width: 50%; height: 50%">
+      <img
+        src="https://images.pexels.com/photos/18105/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt=""
+        width="100%"
+        height="100%"
+      />
+    </div>
+  </body>
+</html>
